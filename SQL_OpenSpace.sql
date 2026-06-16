@@ -15,6 +15,5 @@ WHERE LOWER(Co_Owner) LIKE '%land trust%'
    OR LOWER(Co_Owner) LIKE '%audubon soc%'
    
 WHERE LOWER(State_Use_Description) LIKE '%rec%'
-   OR LOWER(State_Use_Description) LIKE '%490%'
    OR LOWER(State_Use_Description) LIKE '%open%'
  
