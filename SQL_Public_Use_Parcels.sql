@@ -1,4 +1,5 @@
 WHERE
+(
     -- State of Connecticut Government
     LOWER(Owner) LIKE '%state of conn%' OR
     LOWER(Owner) LIKE '%conn state%' OR
@@ -31,12 +32,13 @@ WHERE
     -- Utilities / Public Works
     LOWER(Owner) LIKE '%power co%' OR
     LOWER(Owner) LIKE '%public works%' OR
-    LOWER(Owner) LIKE '%conn light & power co%' OR
+    LOWER(Owner) LIKE '%conn light &amp; power co%' OR
 
     -- Transportation / Railroad
     LOWER(Owner) LIKE '%penn central%'
-
-WHERE
+)
+OR
+(
     -- Federal / State Government
     LOWER(State_Use_Description) LIKE '%state%' OR
     LOWER(State_Use_Description) LIKE '%fed%' OR
@@ -67,5 +69,4 @@ WHERE
 
     -- Postal
     LOWER(State_Use_Description) LIKE '%post%'
-	
-	
+);
