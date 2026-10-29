@@ -25,7 +25,12 @@ OR
 	OR LOWER(State_Use_Description) LIKE '%opn%'
 	OR LOWER(State_Use_Description) LIKE '%forest%'
 	OR LOWER(State_Use_Description) LIKE '%forst%'
-);
+)
+OR 
+(
+	State_Use_Code LIKE '6%'
+)
+	;
 
 	
 
